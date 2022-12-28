@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
-import { owlDefault } from '../app-constant';
+import { owlDefault, owlWithDots } from '../app-constant';
 
 @Component({
   selector: 'app-carousel',
@@ -10,7 +10,8 @@ import { owlDefault } from '../app-constant';
 export class CarouselComponent {
   isDragging = true;
 
-  oulDefaultOption: OwlOptions = owlDefault;
+  owlDefault: OwlOptions = owlDefault;
+  owlWithDots: OwlOptions = owlWithDots;
 
   slidesStore: any = [
     {

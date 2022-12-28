@@ -2,10 +2,27 @@
 
 <div class="container">
     <div class="text-component text-center">
-        <p>Carousel Variation 1 with adding a option <strong>oulDefaultOption</strong></p>
+        <p>Carousel Variation with adding a option <strong>owlDefault</strong></p>
     </div>
     <div class="carousel-component">
-        <owl-carousel-o [options]="oulDefaultOption">
+        <owl-carousel-o [options]="owlDefault">
+            <ng-container *ngFor="let slide of slidesStore">
+                <ng-template carouselSlide [id]="slide.id">
+                    <div class="carousel-items">
+                        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
+                    </div>
+                </ng-template>
+              </ng-container>
+        </owl-carousel-o>
+    </div>
+</div>
+
+<div class="container">
+    <div class="text-component text-center">
+        <p>Carousel Variation with adding a option <strong>owlWithDots</strong></p>
+    </div>
+    <div class="carousel-component">
+        <owl-carousel-o [options]="owlWithDots">
             <ng-container *ngFor="let slide of slidesStore">
                 <ng-template carouselSlide [id]="slide.id">
                     <div class="carousel-items">
