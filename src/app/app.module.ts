@@ -9,6 +9,7 @@ import { CarouselModule } from 'ngx-owl-carousel-o';
 import { SandboxComponent } from './sandbox/sandbox.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
+    FontAwesomeModule ,
     CarouselModule 
   ],
   providers: [],

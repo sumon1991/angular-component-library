@@ -10,7 +10,7 @@ export const owlDefault: OwlOptions = {
   navSpeed: 700,
   autoHeight: true,
   autoWidth: true,
-  navText: ['Pre', 'Next'],
+  navText: ['<i class="fa-solid fa-chevron-left"></i>', '<i class="fa-solid fa-chevron-right"></i>'],
   responsive: {
     0: {
       items: 1

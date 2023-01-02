@@ -6,3 +6,94 @@
 .main {
     margin: 60px 0;
 }
+
+.carousel-component {    
+    &.defaultCarousel {        
+        .owl-carousel.owl-loaded {
+            position: relative;
+        }
+        .owl-nav {
+            margin: 0;
+            position: absolute;
+            top: 45%;
+            width: 100%;
+            i {
+                font-size: 30px;
+            }
+            
+            .owl-prev {
+                align-items: center;
+                background: #fff;
+                border-radius: 0;
+                color: #ffc800;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                left: 0;
+                position: absolute;
+                width: 50px;
+            }
+            .owl-next {
+                align-items: center;
+                background: #fff;
+                border-radius: 0;
+                color: #ffc800;
+                display: flex;
+                height: 50px;
+                justify-content: center;
+                position: absolute;
+                right: 0;
+                width: 50px;
+            }
+        }
+    }
+    &.carouselWithDotsRightBelowImage {        
+        .owl-carousel.owl-loaded {
+            position: relative;
+        }
+        .owl-dots {
+            bottom: 0;
+            position: absolute;
+            text-align: end;
+            width: 100%;
+            .owl-dot {
+                span {
+                    border: 1px solid #ffc800;
+                    background: transparent;
+                }
+                &.active {
+                    span {
+                        background: #ffc800;
+                    }
+                }
+            }
+        }
+    }
+    &.carouselWithDotsBottom {        
+        .owl-carousel.owl-loaded {
+            position: relative;
+        }
+        .owl-dots {
+            bottom: 0;
+            position: absolute;
+            width: 100%;
+            .owl-dot {
+                &.active {
+                    span {
+                        background: #ffc800;
+                    }
+                }
+            }
+        }
+    }
+    &.carouselWithNoNav {
+        .owl-nav {
+            display: none;
+        }
+    }
+    &.carouselWithNoDots {
+        .owl-dots {
+            display: none;
+        }
+    }
+}
