@@ -1,55 +1,71 @@
-
+<!-- Designed By Sumon Sen -->
 <!-- add class carouselWithNoNav at carousel-component to hide the Nav -->
 <!-- add class carouselWithNoDots at carousel-component to hide the Dots -->
 <!-- If you want a full width carousel just change the clas container to jumbotron -->
 
 <div class="container">
-    <div class="text-component text-center">
-        <p>Carousel Default Variation, add class <code>defaultCarousel</code> at <b>carousel-component</b> and <code>[options]=owlDefault</code> at the <b>owl-carousel-o</b></p>
-    </div>
-    <div class="carousel-component defaultCarousel">
-        <owl-carousel-o [options]="owlDefault">
-            <ng-container *ngFor="let slide of slidesStore">
-                <ng-template carouselSlide [id]="slide.id">
-                    <div class="carousel-items">
-                        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-                    </div>
-                </ng-template>
-              </ng-container>
-        </owl-carousel-o>
-    </div>
+  <div class="text-component text-center">
+    <p>
+      Carousel Default Variation, add class <code>defaultCarousel</code> at
+      <b>carousel-component</b> and <code>[options]=owlDefault</code> at the
+      <b>owl-carousel-o</b>
+    </p>
+  </div>
+  <div class="carousel-component defaultCarousel">
+    <owl-carousel-o [options]="owlDefault">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="carousel-items">
+            <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" />
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
 </div>
 
 <div class="container">
-    <div class="text-component text-center">
-        <p>Carousel Default Variation, add class <code>carouselWithDotsBottom carouselWithNoNav</code> at <b>carousel-component</b> and <code>[options]=owlWithDots</code> at the <b>owl-carousel-o</b></p>
-    </div>
-    <div class="carousel-component carouselWithDotsBottom carouselWithNoNav">
-        <owl-carousel-o [options]="owlWithDots">
-            <ng-container *ngFor="let slide of slidesStore">
-                <ng-template carouselSlide [id]="slide.id">
-                    <div class="carousel-items">
-                        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-                    </div>
-                </ng-template>
-              </ng-container>
-        </owl-carousel-o>
-    </div>
+  <div class="text-component text-center">
+    <p>
+      Carousel Default Variation, add class
+      <code>carouselWithDotsBottom carouselWithNoNav</code> at
+      <b>carousel-component</b> and <code>[options]=owlWithDots</code> at the
+      <b>owl-carousel-o</b>
+    </p>
+  </div>
+  <div class="carousel-component carouselWithDotsBottom carouselWithNoNav">
+    <owl-carousel-o [options]="owlWithDots">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="carousel-items">
+            <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" />
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
 </div>
 
 <div class="container">
-    <div class="text-component text-center">
-        <p>Carousel Default Variation, add class <code>carouselWithDotsRightBelowImage carouselWithNoNav</code> at <b>carousel-component</b> and <code>[options]=owlWithDots</code> at the <b>owl-carousel-o</b></p>
-    </div>
-    <div class="carousel-component carouselWithDotsRightBelowImage carouselWithNoNav">
-        <owl-carousel-o [options]="owlWithDots">
-            <ng-container *ngFor="let slide of slidesStore">
-                <ng-template carouselSlide [id]="slide.id">
-                    <div class="carousel-items">
-                        <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title">
-                    </div>
-                </ng-template>
-              </ng-container>
-        </owl-carousel-o>
-    </div>
+  <div class="text-component text-center">
+    <p>
+      Carousel Default Variation, add class
+      <code>carouselWithDotsRightBelowImage carouselWithNoNav</code> at
+      <b>carousel-component</b> and <code>[options]=owlWithDots</code> at the
+      <b>owl-carousel-o</b>
+    </p>
+  </div>
+  <div
+    class="carousel-component carouselWithDotsRightBelowImage carouselWithNoNav"
+  >
+    <owl-carousel-o [options]="owlWithDots">
+      <ng-container *ngFor="let slide of slidesStore">
+        <ng-template carouselSlide [id]="slide.id">
+          <div class="carousel-items">
+            <img [src]="slide.src" [alt]="slide.alt" [title]="slide.title" />
+          </div>
+        </ng-template>
+      </ng-container>
+    </owl-carousel-o>
+  </div>
 </div>

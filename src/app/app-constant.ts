@@ -1,4 +1,4 @@
-
+// Designed By Sumon Sen
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 export const owlDefault: OwlOptions = {
