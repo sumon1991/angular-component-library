@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'component-documentation-poc'`, () => {
+  it(`should have as title 'carousel-variations-with-owl-carousel'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('component-documentation-poc');
+    expect(app.title).toEqual('carousel-variations-with-owl-carousel');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelector('.content span')?.textContent).toContain('component-documentation-poc app is running!');
+    expect(compiled.querySelector('.content span')?.textContent).toContain('carousel-variations-with-owl-carousel app is running!');
   });
 });

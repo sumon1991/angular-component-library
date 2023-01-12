@@ -1,6 +1,6 @@
 {
   "name": "carousel-variations-with-owl-carousel",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "This is carousel variation, with the help of owl-carousel.",
   "scripts": {
     "ng": "ng",
@@ -9,7 +9,7 @@
     "watch": "ng build --watch --configuration development",
     "test": "ng test"
   },
-  "private": true,
+  "private": false,
   "dependencies": {
     "@angular/animations": "^15.0.0",
     "@angular/common": "^15.0.0",
